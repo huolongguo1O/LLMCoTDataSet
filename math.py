@@ -4,8 +4,7 @@ from datasets import load_dataset
 dataset = load_dataset("ServiceNow-AI/R1-Distill-SFT", 'v0', split="train")
 
 # 打乱数据顺序（不设种子以获得随机性）
-# shuffled = dataset.shuffle().select(800000)
-
+shuffled = dataset.shuffle()
 # 字段重命名与列过滤
 processed = shuffled.map(
     lambda item: {
