@@ -1,7 +1,7 @@
 from datasets import load_dataset
 
 # 加载数据集（自动识别train split）
-dataset = load_dataset("ServiceNow-AI/R1-Distill-SFT", subset='v0', split="train")
+dataset = load_dataset("ServiceNow-AI/R1-Distill-SFT", 'v0', split="train")
 
 # 打乱数据顺序（不设种子以获得随机性）
 # shuffled = dataset.shuffle().select(800000)
